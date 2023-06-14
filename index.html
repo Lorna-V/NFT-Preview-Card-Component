@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | NFT preview card component</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+
+    html {
+      font-family: 'Outfit', sans-serif;
+      font-size: 18px;
+      background-color: hsl(217, 54%, 11%);
+    }
+
+    .content-wrapper {
+      background-color: hsl(216, 50%, 16%);
+      border-radius: 5%; 
+      width: 350px;
+      height: 630px;
+      margin: 50px 10px 0px 10px;
+      padding: 30px 30px 0px 30px;
+    }
+    
+    .hero-image {
+      background-image: url(images/image-equilibrium.jpg);
+      border-radius: 5%;
+      width: 345px;
+      height: 335px;
+      background-color:  hsl(178, 100%, 50%);
+      background-size: cover;
+      background-position: center;
+    }
+
+    .hero-image:hover {
+      background-blend-mode: hard-light;
+    }
+
+    h1 {
+      color: hsl(0, 0%, 100%);
+      font-size: 26px;
+      font-weight: 600;
+      margin: 25px 0 0 0;
+    }
+
+    h1:hover {
+      color: hsl(178, 100%, 50%);
+    }
+
+    p {
+      color: hsl(215, 51%, 70%);
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 30px;
+      margin: 20px 10px 20px 0;
+    }
+
+    .ethereum {
+      margin: 0;
+      display: inline-block;
+    }
+
+    .ethereum img {
+      display: inline;
+      float: left;
+      margin: 5px 10px 0px 0px;
+    }
+
+    .ethereum .cyan {
+      color: hsl(178, 100%, 50%);
+      font-weight: 300;
+      display: inline;
+      float: left;
+      margin: 0px;
+    }
+
+    .count-down {
+      margin: 0px 0px 0px 130px;
+      display: inline-block;
+      
+    }
+
+    .count-down img {
+      margin: 7px 5px;
+      display: inline;
+      float: left;
+    }
+
+    .count-down  p {
+      display: inline;
+      float: left;
+      margin: 0;
+    }
+
+    .creator {
+      border-top: solid 1px hsl(215, 51%, 70%);
+      margin: 10px 0px;
+    }
+
+    .creator img {
+      border: solid 1px white;
+      border-radius: 50%;
+      width: 40px;
+      margin: 20px 0px;
+      display: inline;
+      float: left;
+    }
+
+    .creator p {
+      display: inline;
+      float: left;
+      margin: 25px 15px;
+    }
+
+    p span {
+      color: hsl(0, 0%, 100%);
+      font-weight: 300;
+    }
+
+    p span:hover {
+      color: hsl(178, 100%, 50%);
+    }
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution p { margin-top: 40px; width: 375px; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="content-wrapper">
+    
+    <div class="hero-image"></div>
+    
+    <h1>Equilibrium #3429</h1>
+
+    <p>Our Equilibrium collection promotes balance and calm.</p>
+
+    <div class="ethereum">
+      <img src="images/icon-ethereum.svg" alt="Ethereum Icon">
+      <p class="cyan">0.041 ETH</p>
+    </div>
+
+    <div class="count-down">
+      <img src="images/icon-clock.svg" alt="Clock Icon">
+      <p >3 days left</p>
+    </div>
+    
+    <div class="creator">
+      <img src="images/image-avatar.png" alt="Picture of Creator">
+      <p>Creation of <span>Jules Wyvern</span></p>
+    </div>
+
+  </div>
+
+  <div class="attribution">
+    <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    <br>Coded by <a href="https://github.com/Lorna-V">Lorna-V</a>.</p>
+  </div>
+
+</body>
+
+</html>
